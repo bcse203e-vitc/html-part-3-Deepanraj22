@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flight Schedule</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    thead {
+      background-color: #ddd;
+    }
+    .international {
+      background-color: #e0f7fa;
+    }
+    .ontime {
+      color: green;
+      font-weight: bold;
+    }
+    .delayed {
+      color: orange;
+      font-weight: bold;
+    }
+    .cancelled {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>✈️ Flight Schedule</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Flight Number</th>
+        <th>Destination</th>
+        <th>Departure Time</th>
+        <th>Arrival Time</th>
+        <th>Duration</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AI101</td>
+        <td>Delhi</td>
+        <td>08:00</td>
+        <td>10:30</td>
+        <td><abbr title="2 hours 30 minutes">2h 30m</abbr></td>
+        <td class="ontime">On Time</td>
+      </tr>
+      <tr class="international">
+        <td>BA202</td>
+        <td>London</td>
+        <td>09:15</td>
+        <td>15:45</td>
+        <td><abbr title="6 hours 30 minutes">6h 30m</abbr></td>
+        <td class="delayed">Delayed</td>
+      </tr>
+      <tr class="international">
+        <td>EK303</td>
+        <td>Dubai</td>
+        <td>11:00</td>
+        <td>13:30</td>
+        <td><abbr title="2 hours 30 minutes">2h 30m</abbr></td>
+        <td class="ontime">On Time</td>
+      </tr>
+      <tr>
+        <td>6E404</td>
+        <td>Mumbai</td>
+        <td>13:45</td>
+        <td>15:15</td>
+        <td><abbr title="1 hour 30 minutes">1h 30m</abbr></td>
+        <td class="cancelled">Cancelled</td>
+      </tr>
+      <tr class="international">
+        <td>QF505</td>
+        <td>Sydney</td>
+        <td>22:00</td>
+        <td>10:00+1</td>
+        <td><abbr title="12 hours">12h</abbr></td>
+        <td class="ontime">On Time</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
